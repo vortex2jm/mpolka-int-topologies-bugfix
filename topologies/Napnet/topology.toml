@@ -1,0 +1,20 @@
+# Usefull informations about topology
+
+name = "Napnet"
+numbes_of_nodes = 6
+numbes_of_edges = 5
+[bmv2]
+path = "/home/joao/ic/Polkalyzer/lib/p4/bmv2"
+simple_switch_path = "/home/joao/ic/Polkalyzer/lib/p4/bmv2/targets/simple_switch"
+
+[mpolka]
+probe = [[3, 0, 1, 4], [2], [5]]
+tState = [[1, 1, 1, 0], [1, 0], [1, 0], [1], [1], [1]]
+edgeSwitches = [3, 2, 4, 5]
+number_of_edgeSwitches = 4
+number_of_coreSwitches = 6
+nodesID = ['0x8003', '0x8011', '0x8017', '0x802d', '0x8035', '0x805f']
+
+[mpolka.routeID]
+'3' = 0x15accbc1cdab29733b49893
+'5' = 0x19c4e70556e5abeee33240a
