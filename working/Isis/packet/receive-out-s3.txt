@@ -1,0 +1,89 @@
+oi
+teste
+oie
+{}
+###[ Ethernet ]###
+  dst       = 00:04:00:00:00:01
+  src       = 00:04:00:00:00:00
+  type      = 0x2020
+###[ SourceRoute ]###
+     nrouteid  = 1915945086214166489341648836749912L
+###[ IntHeader ]###
+        ver       = 2L
+        d         = 0L
+        e         = 0L
+        m         = 0L
+        r         = 0L
+        hop_ml    = 10L
+        remaining_hop_count= 2L
+        instruction_bitmap= 56832L
+        domain_specific_id= 0L
+        domain_instruction= 0L
+        ds_flags  = 0L
+###[ IntData ]###
+           sw_id     = 5L
+           ingress_port= 0L
+           egress_port= 2L
+           replicate_count= 1L
+           ingress_global_timestamp= 0L
+           egress_global_timestamp= 2653360677L
+           enq_timestamp= 2653360621L
+           enq_qdepth= 0L
+           deq_timedelta= 58L
+           deq_qdepth= 0L
+###[ IntData ]###
+              sw_id     = 1L
+              ingress_port= 0L
+              egress_port= 2L
+              replicate_count= 2L
+              ingress_global_timestamp= 0L
+              egress_global_timestamp= 2653926290L
+              enq_timestamp= 2653926279L
+              enq_qdepth= 0L
+              deq_timedelta= 12L
+              deq_qdepth= 0L
+###[ Raw ]###
+                 load      = 'E\x00\x00\x14\xb2\xa9\x00\x00@\x00\xb2>\n\x00\x01\x01\n\x00\x01\x02'
+teste
+oie
+{}
+###[ Ethernet ]###
+  dst       = 00:04:00:00:00:00
+  src       = 00:04:00:00:00:01
+  type      = 0x2020
+###[ SourceRoute ]###
+     nrouteid  = 4687720560649558955406717647365890L
+###[ IntHeader ]###
+        ver       = 2L
+        d         = 0L
+        e         = 0L
+        m         = 0L
+        r         = 0L
+        hop_ml    = 10L
+        remaining_hop_count= 1L
+        instruction_bitmap= 56832L
+        domain_specific_id= 0L
+        domain_instruction= 0L
+        ds_flags  = 0L
+###[ IntData ]###
+           sw_id     = 3L
+           ingress_port= 0L
+           egress_port= 1L
+           replicate_count= 0L
+           ingress_global_timestamp= 0L
+           egress_global_timestamp= 2653670583L
+           enq_timestamp= 2653670572L
+           enq_qdepth= 0L
+           deq_timedelta= 12L
+           deq_qdepth= 0L
+###[ IntData ]###
+              sw_id     = 1170210864L
+              ingress_port= 1872560128L
+              egress_port= 1073869933L
+              replicate_count= 167772418L
+              ingress_global_timestamp= 720577044236401917L
+              egress_global_timestamp= 1157627924L
+              enq_timestamp= 2997420032L
+              enq_qdepth= 1073787454L
+              deq_timedelta= 167772417L
+              deq_qdepth= 167772418L
