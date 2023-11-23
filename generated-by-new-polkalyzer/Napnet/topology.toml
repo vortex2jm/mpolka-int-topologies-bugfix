@@ -17,4 +17,6 @@ nodesID = ['0x2b', '0x2d', '0x39', '0x3f', '0x47', '0x53']
 
 [mpolka.routeID]
 '3' = 0xc69edb6fea45177f4aea27e1
+'2' = 0x45fa89b3c8c56a1cd0721470
+'4' = 0xdc84590fb43cf6a15907a0ae
 '5' = 0xd62dcc6337bb4ed07d80a2f7

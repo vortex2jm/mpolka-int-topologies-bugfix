@@ -33,7 +33,7 @@ class INTTopo( Topo ):
 		self.host_list = []
 
 		info('*** Adding P4Switches (edge)\n')
-		e = 2
+		e = 4
 		for h in range(e):
 			switch = self.addSwitch('e%d' % (h + 1),
 				sw_path = sw_path,
@@ -57,7 +57,7 @@ class INTTopo( Topo ):
 			thrift_port = thrift_port + 1
 
 		info('*** Adding hosts\n')
-		n = 2
+		n = 4
 		for h in range(n):
 			host = self.addHost('h%d' % (h + 1),
 				ip = '10.0.1.%d/24' % (h + 1),
@@ -70,7 +70,9 @@ class INTTopo( Topo ):
 
 		info('*** Creating links between edge and core switches\n')
 		self.addLink('e1', 's4')
-		self.addLink('e2', 's6')
+		self.addLink('e2', 's3')
+		self.addLink('e3', 's5')
+		self.addLink('e4', 's6')
 		
 		info('*** Creating links between core switches\n')
 		self.addLink('s1', 's2')
@@ -80,7 +82,7 @@ class INTTopo( Topo ):
 		self.addLink('s4', 's6')
 		
 def main():
-	num_hosts = 2
+	num_hosts = 4
 	topo = INTTopo(args.behavioral_exe,
 				args.thrift_port,
 				args.pcap_dump,
@@ -92,7 +94,7 @@ def main():
 
 	net.start()
 	net.staticArp()
-	os.system('flow_table/f.sh 2 6')
+	os.system('flow_table/f.sh 4 6')
 
 	for n in range(num_hosts):
 		h = net.get('h%d' % (n + 1))
